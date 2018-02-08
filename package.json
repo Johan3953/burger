@@ -1,6 +1,8 @@
 {
   "name": "burger",
   "version": "1.0",
+  "description": "Order and eat burgers",
+  "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
