@@ -1,6 +1,6 @@
 {
-  "name": "burger",
-  "version": "1.0",
+  "name": "",
+  "version": "",
   "description": "Order and eat burgers",
   "main": "server.js",
   "dependencies": {
