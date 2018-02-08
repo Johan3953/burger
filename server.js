@@ -1,6 +1,7 @@
 var express = require("express");
 var methodOverride = require("method-override");
 var bodyParser = require("body-parser");
+var connection = require("./config/connection.js");
 
 var port = process.env.PORT || 3000;
 var app = express();
@@ -19,4 +20,8 @@ app.set("view engine", "handlebars");
 
 var routes = require("./controllers/burgers_controller.js");
 app.use("/", routes);
-app.listen(port);
+connecion.connect(function (err) {
+    if (err) throw err;
+    app.listen(port);
+
+})
