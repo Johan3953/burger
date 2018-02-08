@@ -20,7 +20,7 @@ app.set("view engine", "handlebars");
 
 var routes = require("./controllers/burgers_controller.js");
 app.use("/", routes);
-connecion.connect(function (err) {
+connection.connect(function (err) {
     if (err) throw err;
     app.listen(port);
 
